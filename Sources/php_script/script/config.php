@@ -8,6 +8,10 @@ function connection(): bool|int|mysqli
     $password = $_ENV["PASSWORD"];                                       //Get the password for the user selected
     $db_name = $_ENV["DATABASE"];                                        //Get the name of the database
 
+
+
+    echo $_SERVER['REMOTE_ADDR']
+
     try {                                                                //Try to connect to the database
 
         return mysqli_connect($host, $username, $password,$db_name);     //Connecting to database
