@@ -10,7 +10,7 @@ function connection(): bool|int|mysqli
 
 
 
-    echo $_SERVER['REMOTE_ADDR']
+    echo $_SERVER['REMOTE_ADDR'];
 
     try {                                                                //Try to connect to the database
 
