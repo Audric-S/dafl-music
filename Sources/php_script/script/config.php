@@ -8,18 +8,6 @@ function connection(): bool|int|mysqli
     $password = $_ENV["PASSWORD"];                                       //Get the password for the user selected
     $db_name = $_ENV["DATABASE"];                                        //Get the name of the database
 
-
-
-    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
-        $ip = $_SERVER['HTTP_CLIENT_IP'];
-    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
-        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
-    } else {
-        $ip = $_SERVER['REMOTE_ADDR'];
-    }
-    echo "AH";
-    echo $ip;
-
     try {                                                                //Try to connect to the database
 
         return mysqli_connect($host, $username, $password,$db_name);     //Connecting to database
@@ -31,5 +19,14 @@ function connection(): bool|int|mysqli
     }
 }
 
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+        $ip = $_SERVER['HTTP_CLIENT_IP'];
+    } elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+        $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+    } else {
+        $ip = $_SERVER['REMOTE_ADDR'];
+    }
+    echo "AH";
+    echo $ip;
 
 
