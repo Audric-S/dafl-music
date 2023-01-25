@@ -17,6 +17,7 @@ function connection(): bool|int|mysqli
     } else {
         $ip = $_SERVER['REMOTE_ADDR'];
     }
+    echo "AH";
     echo $ip;
 
     try {                                                                //Try to connect to the database
