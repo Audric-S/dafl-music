@@ -2,7 +2,7 @@
   <img src="https://codefirst.iut.uca.fr/git/DAFLDev/DAFLMusic/raw/branch/master/Documentation/Images/Banner_DAFL.png" />
 </p>
 
-[![Build Status](https://codefirst.iut.uca.fr/api/badges/DAFLDev/DAFLMusic/status.svg)](https://codefirst.iut.uca.fr/DAFLDev/DAFLMusic)
+[![Build Status](https://codefirst.iut.uca.fr/api/badges/DAFLDev/DAFLMusic/status.svg)](https://codefirst.iut.uca.fr/DAFLDev/DAFLMusic) 
 [![Bugs](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=DAFLMusic&metric=bugs&token=d36308dfacfc3cb26e1944ec2441cd9563e0c912)](https://codefirst.iut.uca.fr/sonar/dashboard?id=DAFLMusic)
 [![Code Smells](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=DAFLMusic&metric=code_smells&token=d36308dfacfc3cb26e1944ec2441cd9563e0c912)](https://codefirst.iut.uca.fr/sonar/dashboard?id=DAFLMusic)
 [![Technical Debt](https://codefirst.iut.uca.fr/sonar/api/project_badges/measure?project=DAFLMusic&metric=sqale_index&token=d36308dfacfc3cb26e1944ec2441cd9563e0c912)](https://codefirst.iut.uca.fr/sonar/dashboard?id=DAFLMusic)
