@@ -52,6 +52,8 @@ steps:
     CONTAINERNAME: apiredirect
     COMMAND: create
     OVERWRITE: true
+    ADMINS: dorianhodin,alexislamande,baptistebaverel,johanlachenal
+
   depends_on: [ web-server ]
 
 # docker image build
@@ -67,7 +69,8 @@ steps:
     password:
       from_secret: SECRET_PASSWD
 
-# container deployment
+
+  # container deployment
 - name: deploy-php
   image: hub.codefirst.iut.uca.fr/thomas.bellembois/codefirst-dockerproxy-clientdrone:latest
   environment:
@@ -85,6 +88,7 @@ steps:
       from_secret: db_password
     CODEFIRST_CLIENTDRONE_ENV_ROOT_PASSWORD:
       from_secret: db_root_password
+    ADMINS: dorianhodin,alexislamande,baptistebaverel,johanlachenal
   depends_on: [ php_script ]
 
 # database container deployment
@@ -104,4 +108,5 @@ steps:
       from_secret: db_user
     CODEFIRST_CLIENTDRONE_ENV_MARIADB_PASSWORD:
       from_secret: db_password
+    ADMINS: dorianhodin,alexislamande,baptistebaverel,johanlachenal
   depends_on: [ deploy-php ]
