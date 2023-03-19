@@ -39,7 +39,7 @@ steps:
     dockerfile: ./Sources/api_redirect/Dockerfile
     context: Sources/api_redirect/
     registry: hub.codefirst.iut.uca.fr
-    repo: hub.codefirst.iut.uca.fr/felix.mielcarek/dafl_music
+    repo: hub.codefirst.iut.uca.fr/DAFLDev/dafl_music
     username:
       from_secret: secret-registry-username
     password:
